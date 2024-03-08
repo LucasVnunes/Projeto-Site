@@ -1,0 +1,181 @@
+  OBS:HTML
+    <Strong> NEGRITO (ENFÂSE) Dá importancia ao texto escolhido
+    
+        <b> transforma uma frase em negrito
+    
+        <hr> colocar uma linha para dividir sessões
+    
+        <del> risca frase
+
+        <sup> deixa numero ou palavra em cima e <sub> em baixo    
+
+
+        TAGS DE CITAÇÔES:
+    <abbr> Abreviação + title (dentro do abbr)
+        ex: <abbr title="TEXTO">lucas</abbr>
+   
+        <cite> faz uma citação de alguma coisa como ex: livros
+        <q> citação de frases ou fala
+         
+            LINKS:
+        <a href=""> link de Site/videos do youtube etc...
+            ex: <P><a href="https://youtu.be/x23I8f9PwlI?si=URMLnugu96inP_pB"></a>youtube</P>
+            
+            ou se quiser que abra em outra pagina: target="_blank"
+
+            <P<a href="https://youtu.be/x23I8f9PwlI?si=URMLnugu96inP_pB" target="_blank">youtube</a>> </P>
+         para colocar uma API
+         <a> e colocar o Iframe
+
+            acessar uma pasta em um arquivo diferente:
+            <a href="(nome do arquivo)/(nome da pasta)">???</a>
+           obs:para voltar para pasta principal 
+           <a href="../(pasta)"></a>
+
+           TAGS IMAGEM:
+           sem fechamento 
+           <img scr="(caminho da imagem)" width="600" height="1080">
+           ajustar o tamanho: width="??" height="??"
+----------------------------------------------------------------------------
+TITULOS de H1 á H6, nunca repetir H1 pois confunde o navegador
+
+ATALHOS:
+
+ALT+Z: deixa sua area de programação compacta
+ALT+SHIF+F= organiza os codigos identando automaticamente 
+CONTROL+D= edita tags iguais
+=----------------------------------------------------------------------
+  criar tabelas = <table>
+    criar uma linha na tabela <tr>
+        titulo de uma coluna <th>
+            dado <td>
+            EX:
+<table>
+    <tr>
+        <th>conquistas</th>
+        <th>modos de jogo</th>
+        <th>tipo de mapa</th>
+    </tr>
+    <tr>
+        <td>89</td>
+        <td>Jornada, classico, medio...</td>
+        <td>pequeno, medio, grande</td>
+    </tr>
+</table>
+------------------------------------------------------------------
+            Criar Listas desordenadas (sem ser uma lista com numeros): <ul>
+                criar lista: <li>
+
+        Ex:
+        <ul>
+            <li>arroz</li>
+            <li>feijão</li>
+            <li>suco</li>
+            <li>carne</li>
+            <li>queijo</li>
+        </ul>
+
+            criar lista ordenada (ordenada com numeros): <ol>
+
+        Ex:
+        <ol>
+            <li>arroz</li>
+            <li>feijão</li>
+            <li>suco</li>
+            <li>carne</li>
+            <li>queijo</li>
+        </ol>
+-------------------------------------------------------------------------------
+
+
+/////////////// IFRAMES(colocar site dentro do site)(API DE VIDEOS TBM):<iframe> //////////
+                
+          Ex:
+                <iframe src="https://terraria.wiki.gg/pt/wiki/Armas" width="800" height="800" title="wiki fandom terraria"></iframe>
+-------------------------------------------------------------------------------
+
+          /////////////// FORMULÁRIO: <form> ///////////////
+
+                Ex:
+                <form>
+                    <label for="Nome_Usuario">Nome:</label>
+                    <input id="Nome_Usuario" type="text" placeholder="digite seu nome completo">
+            
+                </form>
+
+  <label> legenda(o que vai pedir)            
+  <input=> (campo para digitar) type="text" (tipo texto) placeholder ( escrito dentro do texto Ex: insira seu nome)
+  
+  id batiza nome de algo ex:
+  <input id="email_cadastro" type="text" placeholder="Email para login">
+
+  for chamar o id ex:
+  <label for="email_cadastro">Email:</label>
+  <input id="email_cadastro" type="text" placeholder="Email para login">
+  
+                     CAMPOS INPUT
+criar um campo de texto
+  type="text"
+
+  criar um campo de senha
+  type="password"
+  
+  criar campo email
+  type="email"
+
+        input type radio (cria opções de escolha tipo bolinha)
+    Ex:
+    <p>qual sua arma favorita?</p>
+
+    <input id="espada_forte" type="radio" name="Armas" value="Espada">
+    <label for="espada_forte">Espada</label>
+    <br>
+    <input id="Arco" type="radio" name="Armas" value="Arco">
+    <label for="Arco">Arco</label>
+
+    (se o nome em Name for diferente um do outro, o usuario poderá escolher mais de uma opção, se for igual só poderá escolher uma das opções )
+
+    resumindo radio escolhas unicas sem mudar o nome em NAME 
+    checkbox é multipla escolhas ou seja mudar todos os NAME, assim o usuario escolhe mais de uma
+  
+value (será enviado pro banco de dados)
+
+    enviar FORMULARIO
+
+  <input type="submit" value="Enviar" required (campo obrigatorio)> (dentro do <form>)
+
+//////////////////// SELECIONAR opções em formulario ////////////
+
+    EX:
+
+    <form>
+        <select>
+            <option disabled selected value="">Qual sua comida favorita?</option> (ficará mostrando mas n será permitido selecionar)
+
+            <option value="hamburguer">hamburguer</option>
+            <option value="pizza">pizza</option>
+        </select>
+
+        AREA DE TEXTO <textarea> onde o usuario pode escrever
+    
+        <textarea rows="15" cols="60" placeholder="DIGITE AQUI SUA MENSAGEM" name="mensagem_usuario" ></textarea>
+
+    </form>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+COMO CRIAR UMA TAG DE AUDIO:    
+
+<audio controls>
+    <source src="/Audio.mp3/untitled_1040.mp3" type="audio/mpeg">
+
+</audio>
+
+como criar tag video
+
+<video width="50%" controls>
+    <source src="/Video.mp4/VID-20220811-WA0157.mp4" type="video/mp4">
+
+</video>
+    
+
